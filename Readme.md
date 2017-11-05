@@ -7,8 +7,6 @@ This repository contains the code and instructions to use the trained CNN models
 Topics:
 
 * [Installation](#installation): How to set-up the dependencies / download the models to extract features from new signatures
-* [Usage](#usage): How to use this code as a feature extractor for signature images
-* [Using the features in Matlab](#using-the-features-in-matlab): A script to facilitate processing multiple signatures and saving the features in matlab (.mat) format
 * [Datasets](#datasets): Download extracted features (using the proposed models) for the GPDS, MCYT, CEDAR and Brazilian PUC-PR datasets (.mat files - do not require any pre-processing code)
 
 
@@ -16,7 +14,7 @@ Topics:
 
 ## Pre-requisites 
 
-The code is written in Python 2. We recommend using the Anaconda python distribution ([link](https://www.continuum.io/downloads)), and create a new environment using: 
+The code is written in Python 2.
 ```
 virtualenv pyenv
 source pyenv/bin/activate
@@ -77,11 +75,11 @@ There are two files for each user: real_X.mat and forg_X.mat. The first contains
 
 # Citation
 
-If you use our code, please consider citing the following paper:
+Without these open source works it would have been impossible to come up with a working system:
 
 [1] Hafemann, Luiz G., Robert Sabourin, and Luiz S. Oliveira. "Learning Features for Offline Handwritten Signature Verification using Deep Convolutional Neural Networks" http://dx.doi.org/10.1016/j.patcog.2017.05.012 ([preprint](https://arxiv.org/abs/1705.05787))
 
-If using any of the four datasets mentioned above, please cite the paper that introduced the dataset:
+We are using the following dataset. Here are the papers that introduced these sets:
 
 GPDS: Vargas, J.F., M.A. Ferrer, C.M. Travieso, and J.B. Alonso. 2007. “Off-Line Handwritten Signature GPDS-960 Corpus.” In Document Analysis and Recognition, 9th I    nternational Conference on, 2:764–68. doi:10.1109/ICDAR.2007.4377018.
 
