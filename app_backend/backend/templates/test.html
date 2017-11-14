@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing Page</title>
+</head>
+<body>
+	<p>Main Signature</p>
+{% load static %}
+<img src="{% static "m1-min.jpg" %}" alt="My image" width="500px" height="200px" />
+<br>
+<hr>
+<p>Uploaded Signature by Same User</p>
+<img src="{% static "m2-min.jpg" %}" alt="My image" width="500px" height="200px" />
+<p>Score = {{sameUser}}</p>
+<br>
+<hr>
+<p>Uploaded Signature by a Fraud User</p>
+<img src="{% static "s2-min.jpg" %}" alt="My image" width="500px" height="200px" />
+<p>Score = {{fraud}}
+<br>
+<hr>
+<p>Uploaded Signature by a different User</p>
+<img src="{% static "s3-min.jpg" %}" alt="My image" width="500px" height="200px" />
+<p>Score = {{differentUser}}
+</body>
+</html>

@@ -1,0 +1,38 @@
+<head>
+	<title>Verify</title>
+</head>
+<style type="text/css">
+#center-div {
+    width: 500px;
+    height: 300px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+</style>
+
+<body>
+	<div id="center-div"> 
+		<h3>Upload a signature and verify it against the signature uploaded while account creation</h3>
+		<form method="post" action="/verify/" enctype = "multipart/form-data" >
+			{% csrf_token %}
+			<input type="text" name="acc_no" placeholder="Enter the 11 Digit Account Number" size="35" />
+			<br>
+			<br>
+			<input type="file" name="signature" />
+			<br>
+			<input type="submit" name="">
+		</form>
+		<p>These are the threshold set after overserving and testing the data set - </p>
+		<ul>
+			<li> Confidence Score > 85, Implies - Signature Belong to Same User.</li>
+			<li> 75 < Confidence Score < 85, Implies - Possible Fraud.</li>
+			<li> Confidenc Score < 75, Implies - Signature are Completely Different.</li>
+		</ul>
+	</div>
+</body>
