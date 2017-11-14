@@ -36,6 +36,7 @@ pip install pillow
 pip install "Theano==0.9"
 pip install https://github.com/Lasagne/Lasagne/archive/master.zip
 pip install django
+pip install requests
 ```
 
 We tested the code in Mac OSx High Serria. This code can be used with or without GPUs - to use a GPU with Theano, follow the instructions in this [link](http://deeplearning.net/software/theano/tutorial/using_gpu.html). Note that Theano takes time to compile the model, so it is much faster to instantiate the model once and run forward propagation for many images (instead of calling many times a script that instantiates the model and run forward propagation for a single image).
